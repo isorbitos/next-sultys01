@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Products = () =>(
     <section className="page-section bg-light" id="portfolio">
@@ -42,7 +43,10 @@ const Products = () =>(
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img className="img-fluid" src="img/products/antaniniai.jpg" alt="" />
+                        <div className="img-fluid">
+                        <Image src={`/img/products/antaniniai.jpg`} alt="antaniniai obuoliai"  height="300" width="400"/>
+                        </div>
+                        
                     </a>
                     <div className="portfolio-caption">
                         <div className="portfolio-caption-heading">ANTANINIŲ OBUOLIŲ SULTYS</div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const ProductsModals = () => (
     <div>
@@ -76,7 +77,10 @@ const ProductsModals = () => (
                                 <div className="modal-body">
                                     {/* <!-- Project Details Go Here--> */}
                                     <h2 className="text-uppercase">ANTANINIŲ OBUOLIŲ SULTYS</h2>
-                                    <img className="img-fluid d-block mx-auto" src="img/products/antaniniai.jpg" alt="" />
+                                    <div className="img-fluid d-block mx-auto">
+                                        <Image src={`/img/products/antaniniai.jpg`} alt="antaniniai obuoliai"  height="470" width="700"/>
+                                    </div>
+                                    
                                     <p>100 %  antaninių obuolių sultys</p>
                                     <p>Pakaitintos 78º-80º C temperatūros</p>
                                     <p>Be cukraus</p>
