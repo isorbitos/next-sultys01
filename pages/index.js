@@ -11,11 +11,12 @@ export default function Home() {
         {/* TODO pakeist piesinio importa*/}
         <MasterHeader />
         <Products />
+        <ProductsModals />
         <Pristatymas />
         <Storyline />
         {/* TODO sutvarkyt mapso css */}
         <ContactUs />
-        <ProductsModals />
+        
         
         
         
