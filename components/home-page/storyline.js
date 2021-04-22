@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'next/image'
+import classes from "./storyline.module.css"
 
 const Storyline = () => (
   <section className="page-section bg-light" id="about">
@@ -13,13 +14,9 @@ const Storyline = () => (
       <ul className="timeline">
         <li>
           <div className="timeline-image">
-            <img
-              className="rounded-circle img-fluid"
-              src="img/about/asotis.jpg"
-              alt=""
-            />
-            
-            
+            <div className={classes.image}>
+            <Image src={`/img/about/asotis.jpg`} alt="asotis"  height="200" width="200"/>
+            </div>
           </div>
           <div className="timeline-panel">
             <div className="timeline-heading">
