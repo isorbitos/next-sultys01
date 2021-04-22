@@ -4,14 +4,12 @@ import MasterHeader from "../components/home-page/mastheader";
 import Pristatymas from "../components/home-page/pristatymas";
 import Storyline from "../components/home-page/storyline";
 import Products from "../components/products/products";
-import ProductsModals from "../components/products/productsModals"
 
 export default function Home() {
   return (<Fragment>
         {/* TODO pakeist piesinio importa*/}
         <MasterHeader />
         <Products />
-        <ProductsModals />
         <Pristatymas />
         <Storyline />
         {/* TODO sutvarkyt mapso css */}
