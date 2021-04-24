@@ -10186,6 +10186,11 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
 }
+
+.portfolio-caption{
+  height: 7rem;
+}
+
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
@@ -10297,7 +10302,7 @@ header.masthead .masthead-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 6px solid #e9ecef;
   border-radius: 100%;
   background-color: #fed136;
 }
@@ -10425,7 +10430,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  /* background-image: url("assets/img/map-image.png"); */
+  background-image: url("/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }

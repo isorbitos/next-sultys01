@@ -9,7 +9,7 @@ const ContactUs = () => (
             <div className="text-center">
                 <h2 className="section-heading text-uppercase">Kontaktai</h2>
             </div>
-            <form id="contactForm" name="sentMessage" noValidate="novalidate">
+            {/* <form id="contactForm" name="sentMessage" noValidate="novalidate"> */}
                 <div className="row align-items-stretch mb-5">
                     <div className="col-md-5">
                        <ContactMsg />
@@ -19,7 +19,7 @@ const ContactUs = () => (
                     </div>
                 </div>
 
-            </form>
+            {/* </form> */}
         </div>
     </section>
 );

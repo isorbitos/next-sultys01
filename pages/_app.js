@@ -6,6 +6,7 @@ import Layout from '../components/layout/layout'
 
 function MyApp({ Component, pageProps }) {
   return <Layout> <Head>
+    <title>Natūralios sultys</title>
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossOrigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </Head> <Component {...pageProps} />
