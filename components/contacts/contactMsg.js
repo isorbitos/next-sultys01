@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Notification from "../ui/notification";
 
 async function sendContactData(contactDetails) {
     console.log(contactDetails)
@@ -54,6 +55,32 @@ function ContactMsg() {
     //add client side validation
   }
 
+  let notification;
+
+  if (requestStatus === "pending") {
+    notification = {
+      status: "pending",
+      title: "sending message...",
+      message: "Your message flying to db!!!",
+    };
+  }
+
+  if (requestStatus === "success") {
+    notification = {
+      status: "success",
+      title: "Success!!!",
+      message: "Your message in db!!!",
+    };
+  }
+
+  if (requestStatus === "error") {
+    notification = {
+      status: "error",
+      title: "Oppppsss",
+      message: "Your message gone!!!",
+    };
+  }
+
   return (
 
     <div className="card">
@@ -106,6 +133,13 @@ function ContactMsg() {
           <button className="btn btn-light-blue">Siųsti pranešimą</button>
         </div>
         </form>
+        {notification && (
+        <Notification
+          status={notification.status}
+          title={notification.title}
+          message={notification.message}
+        />
+      )}
       </div>
     </div>
   );

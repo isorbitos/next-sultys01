@@ -7,8 +7,9 @@ function Layout(props){
         <div id="page-top">
         <NavBar />
         <main>{props.children}</main>
+        {/* <Foot /> */}
         </div>
-        <Foot />
+        
     </Fragment>
 };
 
