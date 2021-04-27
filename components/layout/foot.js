@@ -1,4 +1,6 @@
 import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faFacebookF, faInstagram} from "@fortawesome/free-brands-svg-icons"
 
 const Foot = () => (
   <footer className="footer py-4">
@@ -8,7 +10,6 @@ const Foot = () => (
           Copyright © naturaliossultys.lt{" "}
         </div>
         <div className="col-lg-4 my-3 my-lg-0">
-          {/* <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-twitter"></i></a> */}
           <a
             className="btn btn-dark btn-social mx-2"
             href="https://www.facebook.com/sulciufabrikelis"
@@ -16,9 +17,8 @@ const Foot = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-facebook-f"></i>
+            <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          {/* <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-linkedin-in"></i></a> */}
           <a
             className="btn btn-dark btn-social mx-2"
             href="https://www.instagram.com/zavinta_naturaliossultys/"
@@ -26,13 +26,9 @@ const Foot = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-instagram"></i>
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
-        {/* <div className="col-lg-4 text-lg-right">
-                        <a className="mr-3" href="#!">Privacy Policy</a>
-                        <a href="#!">Terms of Use</a>
-                    </div> */}
       </div>
     </div>
   </footer>

@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faPlus} from "@fortawesome/free-solid-svg-icons"
 
 function Product(props){
 
@@ -10,7 +12,7 @@ function Product(props){
                         <div className="portfolio-item">
                             <a className="portfolio-link" data-toggle="modal" href={idName}>
                                 <div className="portfolio-hover">
-                                    <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
+                                    <div className="portfolio-hover-content"><FontAwesomeIcon icon={faPlus} /></div>
                                 </div>
                                 <div className="img-fluid">
                                 <Image src={`/img/products/${picture}`} alt={name}  height="300" width="400"/>

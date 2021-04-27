@@ -1,6 +1,6 @@
 import React from 'react'
-import classes from './contactMap.module.css'
-// import './style.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faPhone, faEnvelope, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons"
 
 const ContactMap = () => (
 
@@ -20,18 +20,18 @@ const ContactMap = () => (
 
         <div className="row text-center map-info">
             <div className="col-md-4">
-                <a className="btn-floating blue accent-1"><i className="fas fa-map-marker-alt"></i></a>
+                <a className="btn-floating blue accent-1"><FontAwesomeIcon icon={faMapMarkerAlt}/></a>
                 <p>Sultis pristatome Vilniuje, dėl kitų miestų parašykite mums žinutę</p>
             </div>
 
             <div className="col-md-4">
-                <a className="btn-floating blue accent-1"><i className="fas fa-phone"></i></a>
+                <a className="btn-floating blue accent-1"><FontAwesomeIcon icon={faPhone}/></a>
                 <p>+37067485711</p>
                 <p>Pirmadieniais - Sekmadieniais</p>
             </div>
 
             <div className="col-md-4">
-                <a className="btn-floating blue accent-1"><i className="fas fa-envelope"></i></a>
+                <a className="btn-floating blue accent-1"><FontAwesomeIcon icon={faEnvelope}/></a>
                 <p>info@naturaliossultys.lt</p>
             </div>
         </div>

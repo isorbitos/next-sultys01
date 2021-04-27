@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Notification from "../ui/notification";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faEnvelope, faUser, faPencilAlt} from "@fortawesome/free-solid-svg-icons"
+
 
 async function sendContactData(contactDetails) {
     console.log(contactDetails)
@@ -88,14 +91,14 @@ function ContactMsg() {
           <form onSubmit={sendMessageHandler}>
         <div className="form-header blue accent-1">
           <h3>
-            <i className="fas fa-envelope"></i> Susisiekite su mumis:
+            <FontAwesomeIcon icon={faEnvelope}/> Susisiekite su mumis:
           </h3>
         </div>
 
         <br />
         <div className="md-form">
-          <i className="fas fa-envelope prefix grey-text"></i>
-          <label htmlFor="email">El.paštas</label>
+        <FontAwesomeIcon icon={faEnvelope}/>
+          <label htmlFor="email"> &nbsp;El.paštas</label>
           <input
             type="text"
             id="email"
@@ -106,8 +109,8 @@ function ContactMsg() {
           />
         </div>
         <div className="md-form">
-          <i className="fas fa-user prefix grey-text"></i>
-          <label htmlFor="name">Vardas</label>
+        <FontAwesomeIcon icon={faUser}/>
+          <label htmlFor="name">&nbsp;Vardas</label>
           <input
             type="text"
             id="name"
@@ -118,8 +121,8 @@ function ContactMsg() {
           />
         </div>
         <div className="md-form">
-          <i className="fas fa-pencil-alt prefix grey-text"></i>
-          <label htmlFor="message"> Tekstas</label>
+          <FontAwesomeIcon icon={faPencilAlt}/>
+          <label htmlFor="message">&nbsp;Tekstas</label>
           <textarea
             id="message"
             className="form-control md-textarea"

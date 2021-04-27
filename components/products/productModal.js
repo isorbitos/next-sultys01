@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faTimes} from "@fortawesome/free-solid-svg-icons"
 
 function ProductModal(props){
     const {id, name, picture, taste, composition } = props.juice
@@ -29,8 +31,8 @@ function ProductModal(props){
                                     <li>Skonis: {taste}</li>
                                 </ul>
                                 <button className="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i className="fas fa-times mr-1"></i>
-                            Close Project
+                                    <FontAwesomeIcon icon={faTimes} />
+                            Uždaryti
                         </button>
                             </div>
                         </div>
