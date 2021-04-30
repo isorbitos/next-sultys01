@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ContactMap from './contactMap'
 import ContactMsg from './contactMsg'
 
 
@@ -15,7 +15,7 @@ const ContactUs = () => (
                        <ContactMsg />
                     </div>
                     <div className="col-md-7">
-                        {/* <ContactMap /> */}
+                        <ContactMap />
                     </div>
                 </div>
 

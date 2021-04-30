@@ -1,4 +1,3 @@
-import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faPhone, faEnvelope, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons"
 import Mapboxgl from './mapBoxGl';
